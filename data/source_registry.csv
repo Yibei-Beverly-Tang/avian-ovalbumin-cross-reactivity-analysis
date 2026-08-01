@@ -1,0 +1,4 @@
+source_id,resource,record_id,organism,evidence_type,url,retrieved_on,verification_status,notes
+uniprot_P01012,UniProtKB,P01012,Gallus gallus,curated protein sequence and annotation,https://rest.uniprot.org/uniprotkb/P01012,2026-08-02,verified_reference,Chicken ovalbumin reference record
+rcsb_1OVA,RCSB PDB,1OVA,Gallus gallus,experimental X-ray structure,https://www.rcsb.org/structure/1OVA,2026-08-02,verified_reference,Uncleaved ovalbumin structure reported at 1.95 angstrom resolution
+

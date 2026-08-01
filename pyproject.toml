@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avian-ovalbumin-cross-reactivity-analysis"
+version = "0.1.0"
+description = "Traceable comparative analysis of avian ovalbumin sequences, epitopes, and structures"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Yibei-Beverly-Tang"}]
+dependencies = []
+
+[project.scripts]
+avian-ova = "avian_ova.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
