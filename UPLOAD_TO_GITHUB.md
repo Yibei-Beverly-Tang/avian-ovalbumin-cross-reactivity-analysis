@@ -25,3 +25,11 @@
 Hidden files such as `.gitignore` and the `.github` workflow directory should
 also be included. The local `.git` directory is intentionally not included in
 the upload package.
+
+## Upload a later full-project update
+
+After extracting the newer project ZIP, upload all extracted contents to the
+existing repository. GitHub will identify modified and new files. For the
+v0.1.1 methodology update, use this commit summary:
+
+`Expand roadmap and add interpretable scoring framework v0.1.1`

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "avian-ovalbumin-cross-reactivity-analysis"
-version = "0.1.0"
+version = "0.1.1"
 description = "Traceable comparative analysis of avian ovalbumin sequences, epitopes, and structures"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -17,4 +17,3 @@ avian-ova = "avian_ova.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-

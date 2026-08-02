@@ -75,10 +75,16 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Project status
 
-Version 0.1.0 establishes the research protocol, provenance registry, source
+Version 0.1.1 establishes the research protocol, provenance registry, source
 validator, automated tests, and continuous-integration workflow. It does not
 yet claim comparative cross-species results. Progress is tracked in
 [`ROADMAP.md`](ROADMAP.md).
+
+The planned analysis uses separate global-sequence, epitope, physicochemical,
+structural, post-translational, and empirical-evidence layers. The definitions
+and the gate for any future composite model are specified in
+[`docs/scoring_framework.md`](docs/scoring_framework.md). No unvalidated
+“clinical risk score” is produced.
 
 ## Primary public resources
 
@@ -91,4 +97,3 @@ yet claim comparative cross-species results. Progress is tracked in
 
 Code is released under the MIT License. Source databases and individual records
 remain subject to their respective terms and citation requirements.
-
