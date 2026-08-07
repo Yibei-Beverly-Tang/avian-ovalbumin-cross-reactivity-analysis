@@ -31,12 +31,12 @@ they remain separate hypothesis-generating features.
 
 ## v0.2.0 — Verified sequence catalogue
 
-- [ ] Define taxonomic and protein-identity inclusion rules.
-- [ ] Retrieve candidate avian ovalbumin records from UniProt.
-- [ ] Preserve raw responses and retrieval metadata.
-- [ ] Exclude fragments, unreviewed identity conflicts, and non-ovalbumin
+- [x] Define taxonomic and protein-identity inclusion rules.
+- [x] Retrieve candidate avian ovalbumin records from UniProt.
+- [x] Preserve raw responses and retrieval metadata.
+- [x] Exclude fragments, unreviewed identity conflicts, and non-ovalbumin
       paralogues using documented rules.
-- [ ] Publish the verified sequence catalogue and exclusion log.
+- [x] Publish the verified sequence catalogue and exclusion log.
 
 ## v0.3.0 — Comparative sequence analysis
 

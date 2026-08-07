@@ -1,0 +1,24 @@
+{
+  "resource": "UniProtKB REST API",
+  "retrieved_on": "2026-08-07",
+  "uniprot_release": "2026_02",
+  "uniprot_release_date": "2026-06-10",
+  "api_deployment_date": "2026-07-29",
+  "total_results": 7,
+  "query": "(reviewed:true) AND (protein_name:ovalbumin) AND (taxonomy_id:8782)",
+  "format": "tsv",
+  "fields": [
+    "accession",
+    "id",
+    "reviewed",
+    "protein_name",
+    "organism_name",
+    "organism_id",
+    "length",
+    "sequence",
+    "protein_families"
+  ],
+  "endpoint": "https://rest.uniprot.org/uniprotkb/search",
+  "documentation": "https://www.uniprot.org/help/api_queries",
+  "notes": "Frozen candidate snapshot. Inclusion decisions are recorded separately; presence in this raw file is not evidence of inclusion."
+}

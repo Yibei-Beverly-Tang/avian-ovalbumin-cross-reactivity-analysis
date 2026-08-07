@@ -1,4 +1,9 @@
 source_id,resource,record_id,organism,evidence_type,url,retrieved_on,verification_status,notes
 uniprot_P01012,UniProtKB,P01012,Gallus gallus,curated protein sequence and annotation,https://rest.uniprot.org/uniprotkb/P01012,2026-08-02,verified_reference,Chicken ovalbumin reference record
 rcsb_1OVA,RCSB PDB,1OVA,Gallus gallus,experimental X-ray structure,https://www.rcsb.org/structure/1OVA,2026-08-02,verified_reference,Uncleaved ovalbumin structure reported at 1.95 angstrom resolution
-
+uniprot_O73860,UniProtKB,O73860,Meleagris gallopavo,reviewed protein sequence and annotation,https://rest.uniprot.org/uniprotkb/O73860,2026-08-07,verified_included,Wild turkey ovalbumin; passed v0.2.0 inclusion rules
+uniprot_Q6V115,UniProtKB,Q6V115,Coturnix coturnix,reviewed protein sequence and annotation,https://rest.uniprot.org/uniprotkb/Q6V115,2026-08-07,verified_included,Common quail ovalbumin; passed v0.2.0 inclusion rules
+uniprot_P19104,UniProtKB,P19104,Coturnix japonica,reviewed protein sequence and annotation,https://rest.uniprot.org/uniprotkb/P19104,2026-08-07,verified_included,Japanese quail ovalbumin; passed v0.2.0 inclusion rules
+uniprot_E2RVI8,UniProtKB,E2RVI8,Dromaius novaehollandiae,reviewed protein sequence and annotation,https://rest.uniprot.org/uniprotkb/E2RVI8,2026-08-07,verified_included,Emu ovalbumin; passed v0.2.0 inclusion rules
+uniprot_P01014,UniProtKB,P01014,Gallus gallus,reviewed candidate protein sequence and annotation,https://rest.uniprot.org/uniprotkb/P01014,2026-08-07,excluded,Ovalbumin-related protein Y paralogue; excluded by v0.2.0 rules
+uniprot_P01013,UniProtKB,P01013,Gallus gallus,reviewed candidate protein sequence and annotation,https://rest.uniprot.org/uniprotkb/P01013,2026-08-07,excluded,Ovalbumin-related protein X paralogue and incomplete-length candidate; excluded by v0.2.0 rules

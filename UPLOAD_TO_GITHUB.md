@@ -30,6 +30,6 @@ the upload package.
 
 After extracting the newer project ZIP, upload all extracted contents to the
 existing repository. GitHub will identify modified and new files. For the
-v0.1.1 methodology update, use this commit summary:
+v0.2.0 sequence-catalogue update, use this commit summary:
 
-`Expand roadmap and add interpretable scoring framework v0.1.1`
+`Add verified avian ovalbumin sequence catalogue v0.2.0`

@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.2.0 — 2026-08-07
+
+- Froze a seven-record UniProtKB reviewed avian ovalbumin candidate snapshot
+  with release, query, and retrieval metadata.
+- Defined explicit protein-identity, paralogue, completeness, family, and
+  sequence-alphabet inclusion rules.
+- Added a standard-library catalogue builder with deterministic CSV, exclusion
+  log, and FASTA outputs.
+- Included five verified ovalbumins and retained two rejected ovalbumin-related
+  paralogues in an auditable exclusion log.
+- Added sequence hashes, source-registry records, protocol documentation, and
+  automated catalogue tests.
+
 ## 0.1.1 — 2026-08-02
 
 - Expanded the roadmap into global-sequence, epitope, physicochemical,

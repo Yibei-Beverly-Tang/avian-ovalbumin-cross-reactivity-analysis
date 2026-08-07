@@ -1,0 +1,3 @@
+accession,entry_name,organism,taxonomy_id,review_status,length,protein_names,source_snapshot,verification_status,exclusion_reason
+P01014,OVALY_CHICK,Gallus gallus (Chicken),9031,reviewed,388,Ovalbumin-related protein Y (Gene Y protein),data/raw/uniprot_reviewed_avian_ovalbumin_2026-08-07.tsv,excluded,record is an ovalbumin-related paralogue
+P01013,OVALX_CHICK,Gallus gallus (Chicken),9031,reviewed,232,Ovalbumin-related protein X (Gene X protein),data/raw/uniprot_reviewed_avian_ovalbumin_2026-08-07.tsv,excluded,record is an ovalbumin-related paralogue; sequence length 232 is outside the predefined 350-425 residue window

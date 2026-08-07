@@ -1,7 +1,7 @@
 # Avian Ovalbumin Cross-Reactivity Analysis
 
 [![Data policy: traceable public records](https://img.shields.io/badge/data-traceable%20public%20records-2ea44f)](data/README.md)
-[![Status: protocol and validation scaffold](https://img.shields.io/badge/status-protocol%20scaffold-blue)](ROADMAP.md)
+[![Status: verified sequence catalogue](https://img.shields.io/badge/status-verified%20sequence%20catalogue-blue)](ROADMAP.md)
 
 Comparative sequence, epitope, and structural analysis of avian ovalbumins for
 **potential** allergenic cross-reactivity.
@@ -31,20 +31,28 @@ experimental or clinical evidence.
 - Computational findings are labelled as predictions or inferences, not as
   clinical conclusions.
 
-The initial registry contains only two independently verified chicken
-ovalbumin reference records. Additional species will be added only after their
-protein identity and provenance pass the inclusion protocol.
+Version 0.2.0 contains a conservative primary catalogue of five complete,
+reviewed avian ovalbumins. All candidate records, inclusion decisions, rejected
+paralogues, retrieval metadata, and sequence checksums remain auditable.
 
-## Verified starting records
+## Verified sequence catalogue
 
-| Resource | Record | Evidence type | Organism |
-|---|---|---|---|
-| UniProtKB | P01012 | Protein sequence and annotation | *Gallus gallus* |
-| RCSB PDB | 1OVA | X-ray structure, 1.95 A | *Gallus gallus* |
+| UniProtKB record | Organism | Length | Role |
+|---|---|---:|---|
+| P01012 | *Gallus gallus* | 386 | Chicken reference |
+| O73860 | *Meleagris gallopavo* | 386 | Included homologue |
+| Q6V115 | *Coturnix coturnix* | 383 | Included homologue |
+| P19104 | *Coturnix japonica* | 383 | Included homologue |
+| E2RVI8 | *Dromaius novaehollandiae* | 386 | Included homologue |
 
-See [`data/source_registry.csv`](data/source_registry.csv) for machine-readable
-provenance and [`docs/research_protocol.md`](docs/research_protocol.md) for the
-planned inclusion and analysis procedure.
+Two reviewed search hits, P01013 and P01014, are retained in the exclusion log
+because they are ovalbumin-related X/Y paralogues rather than target
+ovalbumins. See [`docs/sequence_catalogue.md`](docs/sequence_catalogue.md) for
+the complete inclusion protocol and limitations.
+
+The experimental chicken structure 1OVA remains registered separately as the
+structural reference. See [`data/source_registry.csv`](data/source_registry.csv)
+for machine-readable provenance.
 
 ## Planned outputs
 
@@ -63,6 +71,7 @@ Requires Python 3.10 or later and no third-party packages:
 
 ```bash
 python -m avian_ova.cli validate-sources
+python -m avian_ova.cli verify-checksums
 python -m unittest discover -s tests -v
 ```
 
@@ -70,14 +79,24 @@ For a source checkout without installation:
 
 ```bash
 PYTHONPATH=src python -m avian_ova.cli validate-sources
+PYTHONPATH=src python -m avian_ova.cli verify-checksums
 PYTHONPATH=src python -m unittest discover -s tests -v
+```
+
+Rebuild the processed catalogue from the frozen UniProtKB response:
+
+```bash
+PYTHONPATH=src python -m avian_ova.cli build-catalogue \
+  data/raw/uniprot_reviewed_avian_ovalbumin_2026-08-07.tsv
 ```
 
 ## Project status
 
-Version 0.1.1 establishes the research protocol, provenance registry, source
-validator, automated tests, and continuous-integration workflow. It does not
-yet claim comparative cross-species results. Progress is tracked in
+Version 0.2.0 completes the verified-sequence-catalogue milestone with a frozen
+UniProtKB release 2026_02 snapshot, explicit inclusion rules, five included
+sequences, a two-record exclusion log, deterministic FASTA/CSV generation,
+checksums, automated tests, and continuous integration. It does not yet claim
+comparative cross-species or epitope results. Progress is tracked in
 [`ROADMAP.md`](ROADMAP.md).
 
 The planned analysis uses separate global-sequence, epitope, physicochemical,
